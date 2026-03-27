@@ -2,8 +2,8 @@ name: Trigger BtoC Design Notifier
 
 on:
   schedule:
-    # 毎週火曜日 09:00 JST (= 火曜日 00:00 UTC)
-    - cron: "0 0 * * 2"
+    # 毎日 14:00 JST (= 05:00 UTC) test
+    - cron: "0 5 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
