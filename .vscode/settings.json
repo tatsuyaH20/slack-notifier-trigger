@@ -1,0 +1,28 @@
+{
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "biomejs.biome",
+  "[javascript][typescript][javascriptreact][typescriptreact][json][jsonc][html][css]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "[markdown][mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "file": ".github/prompts/commit-push.prompt.md"
+    }
+  ],
+  "chat.promptFilesRecommendations": {
+    "commit-push": true,
+    "create-pr": true
+  }
+}
