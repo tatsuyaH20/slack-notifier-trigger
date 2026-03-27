@@ -1,16 +1,16 @@
 name: Trigger BtoB Frontend Notifier
 
-on:
-  schedule:
-    # 毎週金曜日 11:00 JST (= 02:00 UTC)
-    - cron: "0 2 * * 5"
-  workflow_dispatch:
-    inputs:
-      target_week:
-        description: |
-          対象週のオフセット（0=直前の木曜日〜次の木曜日, -1=その前の週, デフォルト: 0）
-        required: false
-        default: "0"
+# on:
+#   schedule:
+#     # 毎週金曜日 11:00 JST (= 02:00 UTC)
+#     - cron: "0 2 * * 5"
+#   workflow_dispatch:
+#     inputs:
+#       target_week:
+#         description: |
+#           対象週のオフセット（0=直前の木曜日〜次の木曜日, -1=その前の週, デフォルト: 0）
+#         required: false
+#         default: "0"
 
 # デフォルトシェルでパイプエラーを有効化
 defaults:

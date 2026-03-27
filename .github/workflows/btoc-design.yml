@@ -1,16 +1,16 @@
 name: Trigger BtoC Design Notifier
 
-on:
-  schedule:
-    # 毎週火曜日 9:00 JST (= 月曜24:00 UTC)
-    - cron: "0 0 * * 2"
-  workflow_dispatch:
-    inputs:
-      dry_run:
-        description: |
-          ドライラン（true=Slack送信をスキップしてペイロードのみ表示）
-        required: false
-        default: "true"
+# on:
+#   schedule:
+#     # 毎週火曜日 9:00 JST (= 月曜24:00 UTC)
+#     - cron: "0 0 * * 2"
+#   workflow_dispatch:
+#     inputs:
+#       dry_run:
+#         description: |
+#           ドライラン（true=Slack送信をスキップしてペイロードのみ表示）
+#         required: false
+#         default: "true"
 
 # デフォルトシェルでパイプエラーを有効化
 defaults:
