@@ -36,7 +36,7 @@ jobs:
           REPO_DISPATCH_TOKEN: ${{ secrets.BACKLOG_NOTIFIER_PAT }}
           DRY_RUN: ${{ github.event_name == 'schedule' && 'false' || github.event.inputs.dry_run || 'true' }}
         run: |
-          curl -s -f \
+          curl -w "\nHTTP Status: %{http_code}\n" \
             -X POST \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${REPO_DISPATCH_TOKEN}" \
